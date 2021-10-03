@@ -45,7 +45,7 @@ function getMovies(searchText) {
 function getMovie(movieId) {
     $.ajax({
         method: 'Get',
-        url: 'http://www.omdbapi.com/?apikey=65a08387&i=' + movieId
+        url: 'https://www.omdbapi.com/?apikey=65a08387&i=' + movieId
     }).done(function (movie) {
         let movieTop = `
             <div style="text-align:center">
