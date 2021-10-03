@@ -15,31 +15,26 @@
             <h1>Movie Listings</h1>
         </div>
         <div data-role="main">
-            <form id="searchForm" action="form1" method="post" data-ajax="false">
-                <div class="ui-field-contain">
-                    <input type="text" name="searchText" id="searchText" placeholder="Search For A Movie..." />
-                </div>
-            </form>
-            <ul id="movies" data-role="listview"></ul>
+            <div data-role="header">
+                <h1>Bar</h1>
+            </div><!-- /header -->
 
-            <a href="#secondPage">Go To Second Page</a>
-            <a href="_dialog.html" data-rel="dialog">Open dialog</a>
+            <div data-role="content">
+                <h1>Delete page?</h1>
+                <p>This is a regular page, styled as a dialog. To create a dialog, just link to a normal page and include a transition and <code>data-rel="dialog"</code> attribute.</p>
+                <a href="docs-dialogs.html" data-role="button" data-rel="back" data-theme="b">Sounds good</a>
+                <a href="docs-dialogs.html" data-role="button" data-rel="back" data-theme="c">Cancel</a>
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <h4>Page Footer</h4>
+            </div><!-- /footer -->
         </div>
         <div data-role="footer" style="text-align:center" data-theme="b">
             <p>OMDB &copy; 2021</p>
         </div>
         <script src="js/main.js"></script>
     </div><!-- /page1 -->
-
-    <div data-role="page" id="secondPage" data-url="secondPage">
-        <div data-role="header">
-            <h1>Page 2</h1>
-        </div>
-        <div data-role="content">
-            <h1>Second Page</h1>
-            <a href="#home">Go To home Page</a>
-        </div>
-    </div><!-- /page2 -->
 
 </body>
 </html>
