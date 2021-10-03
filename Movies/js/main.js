@@ -22,7 +22,7 @@ function movieClicked(id) {
 function getMovies(searchText) {
     $.ajax({
         method: 'Get',
-        url: 'http://www.omdbapi.com/?apikey=65a08387&s=' + searchText
+        url: 'https://www.omdbapi.com/?apikey=65a08387&s=' + searchText
     }).done(function (data) {
         let movies = data.Search;
         let output = '';
