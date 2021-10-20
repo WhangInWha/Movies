@@ -11,8 +11,10 @@
 </head>
 <body>
     <div data-role="page" id="home">
-        <div data-role="header" data-theme="b">
+        <div data-role="header" data-position="inline">
+            <a href="Index.html" data-icon="delete">Cancel</a>
             <h1>Movie Listings</h1>
+            <a href="Index.html" data-icon="check" data-theme="b">Save</a>
         </div>
         <div data-role="main">
             <form id="searchForm" action="form1" method="post" data-ajax="false">
@@ -25,8 +27,10 @@
             <a href="#secondPage">Go To Second Page</a>
             <a href="dialog.html" data-rel="dialog">Open dialog</a>
         </div>
-        <div data-role="footer" style="text-align:center" data-theme="b">
-            <p>OMDB &copy; 2021</p>
+        <div data-role="footer" class="ui-bar">
+            <a href="Index.html" data-role="button" data-icon="plus">Add</a>
+            <a href="Index.html" data-role="button" data-icon="arrow-u">Up</a>
+            <a href="Index.html" data-role="button" data-icon="arrow-d">Down</a>
         </div>
         <script src="js/main.js"></script>
     </div><!-- /page1 -->
