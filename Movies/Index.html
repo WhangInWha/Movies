@@ -18,9 +18,11 @@
         </div>
         <div data-role="main">
             <form id="searchForm" action="form1" method="post" data-ajax="false">
-                <div class="ui-field-contain">
+                <label for="search">Search Input:</label>
+                <input type="search" name="searchText" id="searchText" placeholder="Search For A Movie..." />
+                <!--<div class="ui-field-contain">
                     <input type="text" name="searchText" id="searchText" placeholder="Search For A Movie..." />
-                </div>
+                </div>-->
             </form>
             <ul id="movies" data-role="listview"></ul>
 
